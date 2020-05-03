@@ -2,11 +2,14 @@
 
 <p align="center">
   <a href="" rel="noopener">
- <img src="https://i.imgur.com/AZ2iWek.png" alt="Project logo"></a>
+ <img src="./assets/megaHack.png" alt="Project logo"></a>
 </p>
-<h3 align="center">coolmedia-unreal-events</h3>
+
+---
 
 <div align="center">
+
+![alt](./src/images/logo.svg)
 
 [![Hackathon](https://img.shields.io/badge/hackathon-MegaHack-orange.svg)](https://www.megahack.com.br/)
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -18,9 +21,10 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<h2 align="center"> Desafio
     <br>
-</p>
+    <img src="./assets/desafio.png" alt="Project logo"></a>
+</h2>
 
 ## 📝 Table of Contents
 
