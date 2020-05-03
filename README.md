@@ -1,3 +1,5 @@
+### README structure, the data will be finalized together with the finalized project.
+
 <p align="center">
   <a href="" rel="noopener">
  <img src="https://i.imgur.com/AZ2iWek.png" alt="Project logo"></a>
@@ -17,7 +19,7 @@
 ---
 
 <p align="center"> Few lines describing your project.
-    <br> 
+    <br>
 </p>
 
 ## 📝 Table of Contents
