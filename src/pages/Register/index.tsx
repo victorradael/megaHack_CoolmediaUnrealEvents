@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiMail, FiLock, FiArrowRight } from 'react-icons/fi';
+import { FiAtSign, FiMail, FiLock, FiUserCheck } from 'react-icons/fi';
 
 import Input from '../../components/Input';
 import TopBar from '../../components/TopBar';
@@ -11,8 +11,15 @@ const Register: React.FC = () => (
     <TopBar />
     <Container>
       <form>
-        <h1>Entre na sua conta</h1>
+        <h1>Cadastre-se ja!</h1>
 
+        <p>Nome: </p>
+        <Input
+          name="name"
+          icon={FiAtSign}
+          type="text"
+          placeholder="Digite seu nome completo"
+        />
         <p>E-mail: </p>
         <Input name="email" icon={FiMail} placeholder="Digite seu e-mail" />
         <p>Senha: </p>
@@ -25,13 +32,17 @@ const Register: React.FC = () => (
 
         <div>
           <a href="/">
-            <FiArrowRight size={40} />
-            Entrar
+            <FiUserCheck size={40} />
+            Criar Conta
           </a>
         </div>
+        <h6>
+          Ao clicar em cadastrar você concorda com os{' '}
+          <strong>Termos de Política e Privacidade</strong>
+        </h6>
 
         <h5>
-          Nao tenho conta! <a href="/register">Cadastrar</a>
+          Ja tenho conta! <a href="/login">Entrar</a>
         </h5>
       </form>
     </Container>

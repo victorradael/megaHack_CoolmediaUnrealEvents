@@ -3,26 +3,19 @@ import { lighten } from 'polished';
 
 export const Container = styled.div`
   background: #f4f8f9;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
-
-  h1 {
-    text-align: center;
-    margin-bottom: 32px;
-    color: #f98419;
-    text-decoration: underline;
-  }
+  justify-content: center;
+  padding: 64px;
 
   form {
-    width: 50%;
-    border: 2px solid #252594;
+    border: 2px solid #f98419;
     padding: 56px;
-    margin-top: 80px;
-    border-radius: 3%;
+    border-radius: 3% 0 0 3%;
     box-shadow: 6px 4px 11px -6px rgba(0, 41, 145, 1);
-
+    height: 100%;
     div {
       margin-bottom: 16px;
     }
@@ -30,6 +23,32 @@ export const Container = styled.div`
       margin-bottom: 16px;
       font-weight: bold;
       color: #f98419;
+      padding: 16px 8px;
+    }
+
+    input {
+      border: 1px solid #f98419;
+      background: #f4f8f9;
+      padding: 8px;
+      border-radius: 3px;
+      width: 70%;
+    }
+
+    textarea {
+      border: 1px solid #f98419;
+      background: #f4f8f9;
+      padding: 8px;
+      border-radius: 3px;
+      width: 70%;
+      height: 200px;
+    }
+
+    select {
+      border: 1px solid #f98419;
+      background: #f4f8f9;
+      padding: 8px;
+      border-radius: 3px;
+      width: 70%;
     }
 
     div {
@@ -38,7 +57,7 @@ export const Container = styled.div`
       justify-content: center;
       a {
         margin-top: 48px;
-        background: #f98419;
+        background: rgba(0, 41, 145, 1);
         color: white;
         text-decoration: none;
         padding: 16px 32px;
@@ -52,8 +71,7 @@ export const Container = styled.div`
         transition: 0.2s;
 
         &:hover {
-          background: ${lighten(0.2, '#f98419')};
-          color: #333;
+          background: ${lighten(0.2, 'rgba(0, 41, 145, 1)')};
         }
         svg {
           margin-right: 16px;
@@ -69,18 +87,12 @@ export const Container = styled.div`
         color: #333;
       }
     }
+  }
 
-    h5 {
-      font-size: 13px;
-      text-align: center;
-      color: #999;
-      margin-top: 48px;
-      a {
-        color: #333;
-        text-decoration: none;
-        margin-left: 8px;
-        color: #f98419;
-      }
+  section {
+    img {
+      height: 100%;
+      border-radius: 0 3% 3% 0;
     }
   }
 `;

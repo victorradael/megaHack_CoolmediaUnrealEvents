@@ -1,12 +1,7 @@
 import React from 'react';
-import LogIn from './pages/LogIn';
-import Global from './styles/global';
 
-const App: React.FC = () => (
-  <>
-    <LogIn />
-    <Global />
-  </>
-);
+import Routes from './routes';
+
+const App: React.FC = () => <Routes />;
 
 export default App;
