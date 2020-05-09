@@ -58,9 +58,11 @@ export const Card = styled.div`
   justify-content: center;
   border: 1px solid #ddd;
   box-shadow: 6px 4px 11px -6px rgba(0, 41, 145, 1);
+  border-radius: 8px;
 
   img {
     width: 100%;
+    border-radius: 8px 8px 0 0;
   }
 
   div {

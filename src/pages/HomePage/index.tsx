@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import girl from '../../images/girl.svg';
 import imageEx from '../../images/imgex.jpg';
 import {
@@ -21,7 +23,9 @@ const HomePage: React.FC = () => (
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <button type="button">Criar Evento</button>
+        <br />
+        <br />
+        <Link to="/event/register">Criar Evento</Link>
       </div>
       <div>
         <img src={girl} alt="Imagem de Apresentacao" />

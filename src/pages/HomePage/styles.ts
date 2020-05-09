@@ -18,7 +18,7 @@ export const Header = styled.div`
       color: #333;
       margin-bottom: 16px;
     }
-    button {
+    a {
       align-self: center;
       padding: 16px;
       border-radius: 8px;
@@ -29,6 +29,8 @@ export const Header = styled.div`
       font-size: 14px;
       text-transform: uppercase;
       transition: 0.2s;
+      text-decoration: none;
+      margin-top: 16px;
 
       &:hover {
         background: ${lighten(0.2, '#0089ED')};

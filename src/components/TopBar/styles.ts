@@ -52,9 +52,18 @@ export const Bar = styled.div`
         background: ${lighten(0.2, '#252594')};
       }
 
-      & + button {
-        text-transform: uppercase;
+      & + a {
         background: #f98419;
+        padding: 8px;
+
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+
+        box-shadow: 2px 2px 2px -4px rgba(60, 60, 60, 0.5);
+        font-size: 12px;
+        transition: background-color 0.2s;
+        text-transform: uppercase;
 
         &:hover {
           background: ${lighten(0.2, '#f98419')};

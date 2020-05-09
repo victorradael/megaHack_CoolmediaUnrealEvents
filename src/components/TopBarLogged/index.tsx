@@ -6,7 +6,9 @@ import { Bar } from './styles';
 
 const TopBar: React.FC = () => (
   <Bar>
-    <img src={logo} alt="" />
+    <a href="/">
+      <img src={logo} alt="" />
+    </a>
     <div>
       <a href="/">Eventos</a>
       <a href="/">Como funciona?</a>

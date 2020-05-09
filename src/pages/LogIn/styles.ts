@@ -3,10 +3,12 @@ import { lighten } from 'polished';
 
 export const Container = styled.div`
   background: #f4f8f9;
-  height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  padding-bottom: 64px;
 
   h1 {
     text-align: center;
